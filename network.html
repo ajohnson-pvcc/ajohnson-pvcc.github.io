@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Networking Terminology</title>
+    </head>
+    <body   style ="color: #41403e; background-color: #a8ed83; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, verdana; " >
+    </body>
+        <table style="background-color: rgb(189, 214, 76)"; border="1">
+            <th colspan="2" style="font-family:verdana; font-size:300%;">Network Classifications</th>
+            <tr>
+             <th style="font-family:verdana; font-size:150%;">Term</th>
+             <th style="font-family:verdana; font-size:150%;">Definitions</th>
+            </tr>
+            <tr>
+             <td >Network Classifications</td>
+             <td>
+                <ul>LAN: local area network - Links computers within a single building or complex</ul>
+                <ul>MAN: Metropolitan area network - links machines in a network of intermediate size such as a town or city</ul>
+                <ul>WAN: Wide area network - links machines over great distances such as between cities or countries</ul>
+             </td>
+            </tr>
+            <tr>
+             <td>Network Models</td>
+             <td>
+                <ul>Bus Network - All machines are connected to a central controller or bus</ul>
+                <ul>Star Network - A central machine connected to other machines which serve as an access point to the central machine</ul>
+             </td>
+            </tr>
+            <tr>
+                <td>Protocols</td>
+                <td>
+                    <ul>CSMA/CD Ethernet(Carrier Sense, Multiple Access with Collision Detection) - Dictates that each message be broadcast to all machines on the bus. . Each 
+                        machine monitors all the messages but keeps only those addressed to itself. 
+                        To transmit a message, a machine waits until the bus is silent, and at this time 
+                        it begins transmitting while continuing to monitor the bus. If another machine 
+                        also begins transmitting, both machines detect the clash and pause for a brief, 
+                        independently random period of time before trying to transmit again. The 
+                        result is a system similar to that used by a small group of people in a conversation. If two people start to talk at once, they both stop. T</ul>
+                    <ul>CSMA/CA Wifi - The protocol used is similar to Ethernet’s CSMA/CD. The basic 
+                        difference is that when a machine first needs to transmit a message and finds 
+                        the communication channel si1lent, it does not start transmitting immediately. 
+                        Instead, it waits for a short period of time and then starts transmitting only 
+                        if the channel has remained silent throughout that period. If a busy channel 
+                        is experienced during this process, the machine waits for a randomly determined period before trying again. Once this period is exhausted, the machine 
+                        is allowed to claim a silent channel without hesitation. This means that collisions between “newcomers” and those that have already been waiting are 
+                        avoided because a “newcomer” is not allowed to claim a silent channel until 
+                        any machine that has been waiting is given the opportunity to start</ul>
+                </td>
+               </tr>
+               <tr>
+                <td>Combining networks</td>
+                <td>                
+                    <ul>repeater - a device that passes signals back and forth between the two original buses without considering the meaning of the signals</ul>
+                    <ul>bridge - Connects two buses, but doesnt necessarily pass all messages across the connection. Instead, it looks at the destination address that accompanies each 
+                        message and forwards a message across the connection only when that message is destined for a computer on the other side. Thus, two machines residing 
+                        on the same side of a bridge can exchange messages without interfering with 
+                        communication taking place on the other side. </ul>
+                    <ul>switch - a bridge with multiple connections, allowing it to connect several buses rather that just two. Considers the destination addresses of all messages and forwards only those messages destined for other spokes. Each message that is forwarded is relayed only into the appropriate spokem thus minimizing the traffic in each spoke. </ul>
+                    <ul>router - Handles the connection between networks to form an internet, whose special purpose is to forward message. Provides links between networks while allowing each network to maintain its unique internal characteristics</ul>
+                    <ul>gateway - The "point" at which one network is linked to an internet. Serves as the passageway between the network and the outside work</ul>
+                </td>
+               </tr>
+               <tr>
+                <td>Client/server model</td>
+                <td>
+                    <ul>P2P: peer-to-peer - involves processes that provide service to and recieve service from each other</ul>
+                    <ul>Distributed System - consist of software units that execute as processes on different computers</ul>
+                    <ul>Cloud Computing - huge pools of shared computers on a network can be allocated for use by clients as needed.</ul>
+                </td>
+               </tr>
+               <tr>
+                <td>Internet addressing</td>
+                <td>
+                    <ul>Tier 1 - ISPs that consist of very high-speed, high capacity, internation WANs</ul>
+                    <ul>Tier 2 - ISPs that tend to be more regional in scope and less potent in their capabilties. Tend to be operated by companies in the communications business</ul>
+                    <ul>Tier 3 - ISPs - AKA access ISP - An independent Internet (Intranet) operated by a single authority that is in the business of supplying Internet access to individual homes and businesses. </ul>
+                </td>
+               </tr>
+               <tr>
+                <td>IP address</td>
+                <td>
+                    <ul><a href="https://www.icann.org/">ICANN - Internet Corporation for Assigned Names and Numbers </a></ul>
+                    <ul>DNS - Domain Name System - Matches human-readable domain names with unique IDs of servers where a website is hosted</ul>
+                    <ul>TLD: Top-level domain - suffixes appended to addresses such as .edu, .org, etc.</ul>
+                    <ul><a href="https://www.worldstandards.eu/other/tlds/">Country-code TLDs</a> - a TLD representing a country or regions such as .au, .eu, etc</ul>
+                </td>
+               </tr>
+               <tr>
+                <td>Internet protocols</td>
+                <td>
+                    <ul>FTP (File Transfer Protocol) - an application for accessing another computer from a great distance</ul>
+                    <ul>HTTP (Hyper Text Transfer Protocol) - </ul>
+                    <ul>SMTP (Simple Mail Transfer Protocol) - defines a way that two computers on the network may interact when transmitting an email message from one host to the other.</ul>
+                </td>
+               </tr>
+               <tr>
+                <td>World Wide Web</td>
+                <td>
+                    <ul>URL(Uniform Resource Locator) - a unique address used to locate and retrieve documents on the Web </ul>
+                    <ul>client-side activities - performed by a client</ul>
+                    <ul>server-side activities - performed by a server </ul>
+                </td>
+               </tr>
+               <tr>
+                <td>Internet four-layer software</td>
+                <td>
+                    <ul>application layer - Prepares message and provides destination address/Recieves Message</ul>
+                    <ul>transport layer - Chops message into packets / Collects packets and reassembles message</ul>
+                    <ul>network layer - Assigns intermediate address to each packet/ Detects that packet has reached its final destination</ul>
+                    <ul>link layer - Transfer packet / Recieves Packet</ul>
+                </td>
+               </tr>
+               <tr>
+                <td>Internet is:</td>
+                <td>
+                    <ul>packet-switching network</ul>
+                    <ul>fault tolerant</ul>
+                    <ul>redundant</ul>
+                </td>
+               </tr>
+               <tr>
+                <td>Cybersecurity</td>
+                <td>
+                    <ul>malware -Collective name for malicious Software</ul>
+                    <ul>virus - Software that infects a computer by inserting itself into programs that already reside in the machine.</ul>
+                    <ul>worm - an autonomous programs that transfer itself through a network, taking up residence in computers and forwarding copies of iteself to other computers.</ul>
+                    <ul>Trojan horse - a program that enters a computer system diguised as a desirable program, such as a game or utility package. Once installed it performs additional activities that might have harmful effects.</ul>
+                    <ul>Spyware - software that collects information about acitivies at the computer in which it resides and reports that information about activies back to the instigator of the attack.</ul>
+                    <ul>Phishing - a technique of obtaining information explicity by simply asking for it</ul>
+                    <ul>DDoS attack (dedicated denial of service attack) - the process of overloading a computer with messages or requests.</ul>
+                </td>
+               </tr>
+               <tr>
+                <td>Protection</td>
+                <td>
+                    <ul>firewall - A primary prevention technique used to filter traffic passing through a point in the network</ul>
+                    <ul>spam filter - A filter designed specifically to block unwanted email</ul>
+                    <ul>proxy server - a preventative tool that acts as an intermediary between a client and a server with the goal of shielding the client from adverse actions of a server.(Prevents a server from directly have access to client information)</ul>
+                    <ul>antivirus software - Used to detect and remove the presence of known virus and other malware</ul>
+                    <ul>Cryptography - the study of sending and receiving messages securely in the presence of adversaries</ul>
+                    <ul>Public Key Encryption - the encoding of information in an effort to keep it confidential </ul>
+                </td>
+               </tr>
+             </table>
+</table>
+</html>
